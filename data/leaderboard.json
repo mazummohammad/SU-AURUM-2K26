@@ -2,7 +2,7 @@
   "locked": false,
 
   "teams": [
-    { "name": "Code Crushers", "points": 0 },
+    { "name": "Code Crushers", "points": 10 },
     { "name": "Debug Squad", "points": 0 },
     { "name": "Binary Beasts", "points": 0 },
     { "name": "Tech Titans", "points": 0 },
