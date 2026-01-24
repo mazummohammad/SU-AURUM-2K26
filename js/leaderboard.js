@@ -1,19 +1,16 @@
-fetch("data/leaderboard.json?v=" + new Date().getTime())
+fetch("data/leaderboard.json", {
+  cache: "no-store"
+})
   .then(res => res.json())
   .then(data => {
+    console.log("Fresh leaderboard loaded", data);
 
     const table = document.querySelector(".leaderboard-table");
 
-    // 🔒 LOCK LEADERBOARD
-    if (data.locked) {
-      const lockedMsg = document.createElement("div");
-      lockedMsg.className = "leaderboard-locked";
-      lockedMsg.innerText = "Leaderboard will be updated after event completion";
-      table.appendChild(lockedMsg);
-      return;
-    }
+    // clear old rows (important!)
+    table.querySelectorAll(".leaderboard-row:not(.header)")
+         .forEach(row => row.remove());
 
-    // 📊 SORT BY POINTS (DESC)
     const teams = data.teams.sort((a, b) => b.points - a.points);
 
     teams.forEach((team, index) => {
@@ -32,4 +29,7 @@ fetch("data/leaderboard.json?v=" + new Date().getTime())
 
       table.appendChild(row);
     });
+  })
+  .catch(err => {
+    console.error("Leaderboard fetch failed:", err);
   });
