@@ -1,4 +1,4 @@
-fetch("data/leaderboard.json")
+fetch("data/leaderboard.json?v=" + new Date().getTime())
   .then(res => res.json())
   .then(data => {
 
