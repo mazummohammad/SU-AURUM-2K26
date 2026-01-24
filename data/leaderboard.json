@@ -1,5 +1,5 @@
 {
-  "locked": false,
+  "locked": true,
 
   "teams": [
     { "name": "Code Crushers", "points": 0 },
