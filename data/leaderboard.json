@@ -2,10 +2,10 @@
   "locked": false,
 
   "teams": [
-    { "name": "Code Crushers", "points": 0 },
-    { "name": "Debug Squad", "points": 0 },
-    { "name": "Binary Beasts", "points": 0 },
-    { "name": "Tech Titans", "points": 0 },
-    { "name": "Innovators", "points": 0 }
+    { "name": "Black", "points": 0 },
+    { "name": "White", "points": 0 },
+    { "name": "Navy Blue", "points": 0 },
+    { "name": "Green", "points": 0 },
+    { "name": "Maroon", "points": 0 }
   ]
 }
