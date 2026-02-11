@@ -3,9 +3,9 @@
 
   "teams": [
     { "name": "Black", "points": 0 },
-    { "name": "White", "points": 0 },
-    { "name": "Navy Blue", "points": 0 },
-    { "name": "Green", "points": 0 },
-    { "name": "Maroon", "points": 0 }
+    { "name": "White", "points": 3 },
+    { "name": "Navy Blue", "points": 7 },
+    { "name": "Green", "points": 5 },
+    { "name": "Maroon", "points": 10 }
   ]
 }
