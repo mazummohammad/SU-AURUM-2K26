@@ -2,10 +2,10 @@
   "locked": false,
 
   "teams": [
-    { "name": "Black", "points": 10 },
-    { "name": "White", "points": 13 },
-    { "name": "Navy Blue", "points": 22 },
-    { "name": "Green", "points": 20 },
+    { "name": "Black", "points": 20 },
+    { "name": "White", "points": 20 },
+    { "name": "Navy Blue", "points": 27 },
+    { "name": "Green", "points": 23 },
     { "name": "Maroon", "points": 32 }
   ]
 }
